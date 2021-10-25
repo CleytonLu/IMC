@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="imc.css">
+    <script src="imc.js"></script>
+</head>
+<body>
+
+    <article>
+    <div id="o-que-e">
+        <h1>O que é IMC ?</h1>
+        <p id="significado">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado <br> pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+        
+    </div>
+
+    <div id="tabela">
+        <h1>Medidas do IMC</h1>
+        <p id="infor-tab">Menor que 16 - Magreza grave <br>
+            16 a 17 - Magreza moderada <br> 17 a 18,5 - Magreza leve <br> 18,5 a 25 - Saudável <br> 25 a 30 - Sobrepeso <br> 30 a menor que 35 - Obesidade Grau I <br> 35 a 40 - Obesidade Grau II (considerada severa) <br> Maior que 40 - Obesidade Grau III (considerada mórbida) <br>
+            <a href="">Veja mais</a></p>
+    </div>
+
+    <div>
+        <h1>Como realizar o Cálculo</h1>   
+        <p id="calc">O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. <br> É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).</p> 
+    </div>
+
+</article>
+    <div id="imc">
+    <section>  
+        <div id="area-calc"> 
+            <p id="pedido">Siga o que é pedido nos campos, colocando ponto. Caso queira fazer um novo cálculo, aperte em limpar e redefina os valores.</p>
+            <p>Peso: <input type="number" name="peso" id="peso" placeholder="ex.: 78" maxlength="6" onkeyup="mascp()"></p>  
+            <p>Altura: <input type="text" name="altura" id="altura" placeholder="ex.: 1.68" maxlength="4"></p>
+            <p><input type="button" value="Calcular >" onclick="calcular()"> <input type="button" value="Limpar >" onclick="limpar()"></p>
+        </div>  
+              
+        <div id="res">
+            SEU IMC: 
+        </div>
+
+        <div id="infor">
+            <p>O que Fazer se estiver nesse caso: </p>   
+        </div>
+    </section>     
+   </div>     
+
+   <footer>
+       <p>DESENVOLVIDO POR CLEYTON LUCAS</p> <a href="https://www.linkedin.com/in/cleyton-lucas-51aa551b3/">LinkeIdn</a> | <a href="https://github.com/CleytonLu">GitHub</a>
+   </footer>
+</body>
+</html>
